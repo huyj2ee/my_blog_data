@@ -1,0 +1,131 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="uml" version="4">
+  <OBJECT>
+    <ID name="uml" mc="Standard.Package" uid="3f257540-e0e6-4484-81bd-5d20e6f46db5"/>
+    <PID name="uml" mc="Standard.Project" uid="8eafd967-2400-4a77-8a83-def13e090ee2"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[uml]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedInformationFlow">
+        <OBJECT>
+          <ID name="click" mc="Standard.InformationFlow" uid="93d222db-b44d-485e-a493-c84d0e086abe"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[click]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <ID name="Player" mc="Standard.Actor" uid="a2c37636-66d5-453b-95ac-a0ea57519d66"/>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <ID name="Button" mc="Standard.Class" uid="f88e8dea-e2c0-4e05-9528-850e1292cdf3"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="display cells" mc="Standard.InformationFlow" uid="add99d7f-8bb1-4966-96e1-4637007e7675"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[display cells]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <ID name="GameBoard" mc="Standard.Class" uid="8aa55cfa-c82a-4997-a746-b84208382980"/>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <ID name="Player" mc="Standard.Actor" uid="a2c37636-66d5-453b-95ac-a0ea57519d66"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="display balls" mc="Standard.InformationFlow" uid="baa0c718-5986-4962-a627-8055fbdaebab"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[display balls]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <ID name="BallManager" mc="Standard.Interface" uid="369f1c99-f4c0-44e2-b07b-69b5b7afd537"/>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <ID name="Player" mc="Standard.Actor" uid="a2c37636-66d5-453b-95ac-a0ea57519d66"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="select cell" mc="Standard.InformationFlow" uid="3b821b03-ab1c-40c0-a5e3-3255fada0499"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[select cell]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <ID name="Player" mc="Standard.Actor" uid="a2c37636-66d5-453b-95ac-a0ea57519d66"/>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <ID name="BallManager" mc="Standard.Interface" uid="369f1c99-f4c0-44e2-b07b-69b5b7afd537"/>
+            </LINK>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="Note" mc="Infrastructure.Note" uid="72cf85e4-35ed-4638-b83f-221c7dbfb3cc"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Cell without ball has a null ball to listen on select cell event.]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"><![CDATA[Note]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="display score" mc="Standard.InformationFlow" uid="87238c63-6232-436f-bbd2-62aeb9dabf92"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[display score]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <ID name="ScoreBoard" mc="Standard.Interface" uid="a9ebda0a-64f9-4cfc-9b80-88c61175b7e4"/>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <ID name="Player" mc="Standard.Actor" uid="a2c37636-66d5-453b-95ac-a0ea57519d66"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="defaultInitialize" mc="Standard.InformationFlow" uid="07c24821-1883-4d3d-af5c-8bda3b06d98e"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[defaultInitialize]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <ID name="Browser" mc="Standard.Actor" uid="3f68a542-ffad-4e88-ab8d-8e0932c74e2d"/>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <ID name="Line98" mc="Standard.Class" uid="c07a4625-45d1-4334-a34d-3b32bd1098d0"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="BI" mc="Standard.Package" uid="e8e8ce55-093c-4905-9fb7-437e4d9a28a0"/>
+        <COMPID name="BA" mc="Standard.Package" uid="256c5036-feab-4815-a1ba-d680d9ad7f03"/>
+        <COMPID name="TA" mc="Standard.Package" uid="1966b655-1e7b-49cd-aa2a-ba7f5f3001bb"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

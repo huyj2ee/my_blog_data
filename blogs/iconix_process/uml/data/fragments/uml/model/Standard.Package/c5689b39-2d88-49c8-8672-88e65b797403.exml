@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Line 98" version="4">
+  <OBJECT>
+    <ID name="Line 98" mc="Standard.Package" uid="c5689b39-2d88-49c8-8672-88e65b797403"/>
+    <PID name="BI" mc="Standard.Package" uid="e8e8ce55-093c-4905-9fb7-437e4d9a28a0"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Line 98]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Domain Model" mc="Standard.Package" uid="d5b90c91-ee3c-4146-8266-ae2407d7faae"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

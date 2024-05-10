@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Detail View" version="4">
+  <OBJECT>
+    <ID name="Detail View" mc="Standard.Package" uid="e8e187ad-d800-4fd3-9c8f-0652a6c5bf89"/>
+    <PID name="Line 98" mc="Standard.Package" uid="3b51dd48-476e-44c9-bd15-220dd97e1ef1"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Detail View]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="BallManagerStates" mc="Standard.StateMachine" uid="056c6a74-92c1-4389-be7f-c1c412fd523f"/>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="Ball" mc="Standard.Class" uid="134208de-1f53-43b0-93a6-3f383a9129af"/>
+        <COMPID name="BallManagerListener" mc="Standard.Interface" uid="85ede94d-e6f8-460c-9621-7ffce234d0f2"/>
+        <COMPID name="ResetListener" mc="Standard.Interface" uid="824c08f5-eaef-4f81-9e49-26e04bf534fc"/>
+        <COMPID name="GameEngine" mc="Standard.Class" uid="cd113ca1-15d8-4adb-9d3a-f1c6e4a47594"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="ImplementationClasses" mc="Standard.ClassDiagram" uid="f1f2b1e0-0c8d-46e4-a568-c5208acff770"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

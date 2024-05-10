@@ -1,0 +1,187 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Generic View" version="4">
+  <OBJECT>
+    <ID name="Generic View" mc="Standard.Package" uid="f4b0f591-45a7-440e-9301-f4e5c57ac846"/>
+    <PID name="Line 98" mc="Standard.Package" uid="3b51dd48-476e-44c9-bd15-220dd97e1ef1"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Generic View]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="ResetGame" mc="Standard.Interaction" uid="8e695914-8bef-4aaa-98c3-127ead22f4da"/>
+        <COMPID name="MoveBall" mc="Standard.Interaction" uid="fa674f52-ac3d-4a3c-97f2-0f7a3af7f579"/>
+        <COMPID name="MoveBall_4A" mc="Standard.Interaction" uid="acd93ea0-26a6-4d5d-83a8-160008e1749b"/>
+        <COMPID name="MoveBall_7A" mc="Standard.Interaction" uid="88e8a2ce-e224-45b1-a80c-e7c92d7376f0"/>
+        <COMPID name="MoveBall_8A" mc="Standard.Interaction" uid="be2af178-62e0-4ebf-b7d3-00c072563bf5"/>
+        <COMPID name="MoveBall_9A" mc="Standard.Interaction" uid="44565227-752a-47f1-a603-38adcc9ad735"/>
+        <COMPID name="MoveBall_9A.4A" mc="Standard.Interaction" uid="a45daf33-ae25-46bb-8322-03f39661adaf"/>
+        <COMPID name="MoveBall_5A" mc="Standard.Interaction" uid="90639c91-f1b3-42ff-bad1-fb00d91ce5e1"/>
+        <COMPID name="ResetGame_1A" mc="Standard.Interaction" uid="731c1b23-8700-40b2-8985-0742dd6dbc5b"/>
+        <COMPID name="ViewScore" mc="Standard.Interaction" uid="de876e67-cbc0-4728-9d8b-1f5b4b7b21f1"/>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="ScoreBoard" mc="Standard.Interface" uid="a9ebda0a-64f9-4cfc-9b80-88c61175b7e4"/>
+        <COMPID name="BallManager" mc="Standard.Interface" uid="369f1c99-f4c0-44e2-b07b-69b5b7afd537"/>
+        <COMPID name="Button" mc="Standard.Class" uid="f88e8dea-e2c0-4e05-9528-850e1292cdf3"/>
+        <COMPID name="GameBoard" mc="Standard.Class" uid="8aa55cfa-c82a-4997-a746-b84208382980"/>
+        <COMPID name="GameEngine" mc="Standard.Class" uid="b29e020e-d838-4675-b9a2-a874a14d091d"/>
+        <COMPID name="GameState" mc="Standard.Class" uid="fd326e1a-9c8e-4832-9209-bdad4ac824a5"/>
+        <OBJECT>
+          <ID name="GameObjects" mc="Standard.Collaboration" uid="6d9dd322-73be-4570-82bf-302e87ab2d09"/>
+          <ATTRIBUTES>
+            <ATT name="IsConcurrent">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[GameObjects]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Declared">
+              <OBJECT>
+                <ID name="player" mc="Standard.BindableInstance" uid="b3965035-4ce8-4f24-a524-3e6e65971d03"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[player]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="Player" mc="Standard.Actor" uid="a2c37636-66d5-453b-95ac-a0ea57519d66"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="reset" mc="Standard.BindableInstance" uid="874da469-4cd2-4881-8c14-eaa033ebde16"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[reset]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="Button" mc="Standard.Class" uid="f88e8dea-e2c0-4e05-9528-850e1292cdf3"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="gui" mc="Standard.BindableInstance" uid="2bbea6e1-01ba-463f-b534-e0f7e8b59c16"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[gui]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="BallManager" mc="Standard.Interface" uid="369f1c99-f4c0-44e2-b07b-69b5b7afd537"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="app" mc="Standard.BindableInstance" uid="86237ee9-cc1e-4a61-9a2a-5839bc79aa78"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[app]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="GameEngine" mc="Standard.Class" uid="b29e020e-d838-4675-b9a2-a874a14d091d"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="state" mc="Standard.BindableInstance" uid="0dbe75b1-9c27-4b44-b8f4-ab3786bb6ced"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[state]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="GameState" mc="Standard.Class" uid="fd326e1a-9c8e-4832-9209-bdad4ac824a5"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="scoreBoard" mc="Standard.BindableInstance" uid="6b717e19-8dbf-46bf-a339-09f36abf51b7"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[scoreBoard]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="ScoreBoard" mc="Standard.Interface" uid="a9ebda0a-64f9-4cfc-9b80-88c61175b7e4"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="browser" mc="Standard.BindableInstance" uid="91aff1b2-6ffa-4de9-8602-d38abbb8b1e9"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[browser]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="Browser" mc="Standard.Actor" uid="3f68a542-ffad-4e88-ab8d-8e0932c74e2d"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="line98" mc="Standard.BindableInstance" uid="0856521b-f171-451a-838e-2cba2d5dd18d"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[line98]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="Line98" mc="Standard.Class" uid="c07a4625-45d1-4334-a34d-3b32bd1098d0"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <COMPID name="Line98" mc="Standard.Class" uid="c07a4625-45d1-4334-a34d-3b32bd1098d0"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Architecture" mc="Standard.ClassDiagram" uid="027bd356-1eaa-4241-9e0b-7a1b50fe9551"/>
+        <COMPID name="DomainClasses" mc="Standard.ClassDiagram" uid="7c08e997-a920-4eae-8de5-228909bdc3ea"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
